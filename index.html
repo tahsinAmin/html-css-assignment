@@ -5,23 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>HTML + CSS</title>
   </head>
   <body>
     <nav
-      class="bg-blue-900 text-white flex justify-between items-center px-4 py-6"
+      class="bg-blue-900 text-white flex justify-between items-center px-4 py-4"
     >
-      <div class="logo">Logo</div>
-      <div class="others hidden sm:block flex space-x-3 ">
-        <a href="" class="tracking-wider font-regular text-lg">Rentals
+      <div class="logo">
+        <img
+          class="max-w-full nav-row-logo"
+          loading="lazy"
+          src="/img/header_logo.svg"
+          alt="rentByOwner"
+          width="182"
+          height="26"
+        />
+      </div>
+      <div class="others hidden sm:block flex space-x-4">
+        <a href="" class="tracking-wider font-regular text-lg"
+          >Rentals
           <i class="fas fa-chevron-down"></i>
         </a>
-        <a href="" class="tracking-wider font-regular text-lg">Nearby
-          <i class="fas fa-chevron-down"></i></a>
-        <a href="" class="tracking-wider font-regular text-lg">Destinations
-          <i class="fas fa-chevron-down"></i></a>
-        <button class="bg-[#00CD92] py-3 p-4 rounded-xl font-regular text-white text-lg">Find a Vacation Rental</button>
+        <a href="" class="tracking-wider font-regular text-lg"
+          >Nearby <i class="fas fa-chevron-down"></i
+        ></a>
+        <a href="" class="tracking-wider font-regular text-lg"
+          >Destinations <i class="fas fa-chevron-down"></i
+        ></a>
+        <button
+          class="
+            bg-[#00CD92]
+            py-3
+            p-4
+            rounded-xl
+            font-regular
+            text-white text-lg
+          "
+        >
+          Find a Vacation Rental
+        </button>
       </div>
       <svg
         class="block h-6 w-6 sm:hidden"
@@ -41,45 +70,103 @@
       </svg>
     </nav>
     <main class="max-w-7xl bg-gray-100 mx-auto">
-      <div class="hero h-96 bg-[url('/img/hero.jpg')] bg-cover bg-center mt-2">
-        <div class="place-items-center">
-          <h3>JOURNEYS</h3>
-          <h1>Stories From Around the world</h1>
-          <input type="text" placeholder="Search ..." />
+      <div
+        class="
+          hero
+          relative
+          h-96
+          bg-[url('/img/hero.jpg')] bg-cover bg-center
+          mt-2
+        "
+      >
+        <div class="absolute top-1/2 w-full">
+          <div class="text-center text-white bg-gray-900">
+            <h3 class="text-2xl font-normal">JOURNEYS</h3>
+            <h1 class="text-4xl font-semibold">
+              Stories From Around the world
+            </h1>
+            <input type="text" placeholder="Search ..." />
+          </div>
         </div>
-
       </div>
-      <div class="mt-4 sm:flex sm:space-x-5">
+      <div class="mt-4 h-72 sm:flex sm:space-x-5">
         <div
           class="
             mb-4
             sm:mb-0 sm:w-3/12
-            h-80
-            bg-gray-300 bg-[url('/img/sedona.jpg')] bg-cover bg-center
+            flex flex-col
+            justify-between
+            text-white
+            font-normal
+            shadow-lg
+            bg-[url('/img/sedona.jpg')] bg-cover bg-center
+            p-4
+            rounded-lg
           "
         >
-          The Best Sedona
+          <p class="text-2xl" style="text-shadow: 1px 1px #000">
+            The Best Sedona Hiking Trails
+          </p>
+          <small class="text-md">By Staff Writer</small>
         </div>
         <div
           class="
             mb-4
+            p-4
             sm:mb-0 sm:w-6/12
-            h-80
             bg-gray-300 bg-[url('/img/tybee.jpg')] bg-cover bg-center
+            rounded-lg
           "
         >
           tybee Island
         </div>
-        <div class="mb-4 sm:mb-0 sm:w-3/12 h-80 bg-blue-900 text-[#00CD92]">
-          The night life and the food
+        <div
+          class="
+            rounded-lg
+            mb-4
+            sm:mb-0 sm:w-3/12
+            bg-blue-900
+            p-4
+            flex flex-col
+            justify-between
+          "
+        >
+          <p class="text-[#00CD92] text-2xl font-semibold">
+            The night life and the food
+          </p>
+          <small class="text-md font-semibold text-[#00CD92] underline"
+            >Explore Lioberia</small
+          >
         </div>
       </div>
       <div class="mt-4 sm:flex sm:space-x-4">
-        <div class="mb-4 sm:mb-0 sm:w-9/12 sm:flex sm:flex-col">
+        <div class="mb-4 sm:mb-0 sm:w-9/12 sm:flex sm:flex-col space-y-4">
           <div class="sm:flex sm:space-x-4 mb-4 space-x-1">
-            <div class="image w-4/12 h-80 bg-blue-900"></div>
-            <div class="image-content w-8/12 h-80 bg-gray-300">
-              the best Beach in town
+            <div
+              class="
+                w-11/12 mx-auto
+                sm:w-4/12
+                h-64
+                flex
+                items-center
+                justify-center
+                bg-blue-900
+                rounded-xl
+              "
+            >
+              <img
+                class="w-4/5"
+                loading="lazy"
+                src="/img/header_logo.svg"
+                alt="rentByOwner"
+                width="182"
+                height="26"
+              />
+            </div>
+            <div class="image-content w-8/12 h-80">
+              <header class="text-5xl font-regular text-blue-900 bg-gray-300">
+                The Best Beach Towns in florida You Need To Visit
+              </header>
             </div>
           </div>
           <div class="sm:flex sm:space-x-4 mb-4 space-x-1">
@@ -88,77 +175,155 @@
               the best Sarosta Artea
             </div>
           </div>
+          <div class="pagination flex space-x-3">
+            <div class="active border bg-blue-900 text-white py-2 px-4">1</div>
+            <div class="border text-blue-900 py-2 px-4">2</div>
+            <div class="border text-blue-900 py-2 px-4">...</div>
+            <div class="border text-blue-900 py-2 px-4">38</div>
+            <div class="border text-blue-900 p-2">LAST</div>
+          </div>
+          <div class="typeeIs py-4 px-8 bg-blue-900 flex">
+            <i class="fas fa-quote-left text-gray-400 h-10 w-10 scale-105"></i>
+            <header class="text-[#00CD92] text-5xl font-regular">
+              Tybee is replete with everythiong that you need to have the
+              perfect vacation.
+            </header>
+          </div>
         </div>
         <div class="mb-4 sm:mb-0 sm:w-3/12 h-80 bg-gray-300">
           <header class="font-light uppercase">catagories</header>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li class="text-[#00CD92] flex justify-between">
+              <p>Alabama</p>
+              <span
+                class="
+                  h-4
+                  w-4
+                  border border-[#00CD92]
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </li>
+            <li class="text-[#00CD92] flex justify-between">
+              <p>Alabama</p>
+              <span
+                class="
+                  h-6
+                  w-6
+                  border border-[#00CD92]
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </li>
           </ul>
         </div>
       </div>
-      <div class="hero bg-gray-200 mt-4">
-        <header class="font-light uppercase">Follow the adventures</header>
-        <div class="grid grid-cols-4">
+      <div class="mt-12">
+        <header class="font-medium text-xl text-gray-800">Follow The Adventures</header>
+        <div class="mt-4 grid grid-cols-4">
           <div
             class="
               mb-4
               h-80
-              bg-gray-300 bg-[url('/img/tybee.jpg')] bg-cover bg-center
+              bg-gray-300 bg-[url('/img/india2.jpg')] bg-cover bg-center
             "
           >
-            tybee Island
           </div>
           <div
             class="
               mb-4
               h-80
-              bg-gray-300 bg-[url('/img/tybee.jpg')] bg-cover bg-center
+              bg-gray-300 bg-[url('/img/lioncity.jpg')] bg-cover bg-center
             "
           >
-            tybee Island
           </div>
           <div
             class="
               mb-4
               h-80
-              bg-gray-300 bg-[url('/img/tybee.jpg')] bg-cover bg-center
+              bg-gray-300 bg-[url('/img/indiagate.jpg')] bg-cover bg-center
             "
           >
-            tybee Island
           </div>
           <div
             class="
               mb-4
               h-80
-              bg-gray-300 bg-[url('/img/tybee.jpg')] bg-cover bg-center
+              bg-gray-300 bg-[url('/img/china1.jpg')] bg-cover bg-left
             "
           >
-            tybee Island
           </div>
         </div>
       </div>
     </main>
     <footer class="bg-blue-100 px-4 py-6 mt-4">
-      <div class="content border bg-gray-300 w-7/12 mx-auto mb-2">
-        <header class="font-semibold text-2xl">Find a Place to Stay</header>
+      <div class="content border flex space-x-4 bg-gray-300 w-7/12 mx-auto mb-2">
+        <div class="find">
+          <header class="font-semibold text-xl">Find a Place to Stay</header>
+          <ul class="grid grid-cols-2">
+            <li>Cabins</li>
+            <li>Cabins</li>
+            <li>Cabins</li>
+            <li>Cabins</li>
+            <li>Cabins</li>
+            <li>Cabins</li>
+            <li>Cabins</li>
+            <li>Cabins</li>
+            <li>Cabins</li>
+            <li>Cabins</li>
+            <li>Cabins</li>
+            <li>Cabins</li>
+          </ul>
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="about">
+            <header class="font-semibold text-xl">About Us</header>
+            <ul class="grid grid-cols-1">
+              <li>About rent By Owner</li>
+              <li>Our Travel Journal</li>  
+            </ul>
+          </div>
+          <div class="explore">
+            <header class="font-semibold text-xl">Explore</header>
+            <ul class="grid grid-cols-1">
+              <li>My Profile</li>
+              <li>Site Map</li>  
+            </ul>
+          </div>
+          <div class="support">
+            <header class="font-semibold text-xl">Support</header>
+            <ul class="grid grid-cols-1">
+              <li>FAQs</li>
+              <li>List your Property</li>  
+            </ul>
+          </div>
+        </div>
+
       </div>
-      <hr />
-      <div>
-        <div class="policy flex justify-between py-2 items-center">
+      <div class="border border-t-1 border-gray-600"></div>
+      <div class="flex justify-between py-2 items-center text-lg text-gray-600">
+        <div class="policy flex justify-between py-2 items-center space-x-64">
           <div class="icons flex space-x-1">
             <div class="h-8 w-8 rounded-full bg-gray-400"></div>
             <div class="h-8 w-8 rounded-full bg-gray-400"></div>
             <div class="h-8 w-8 rounded-full bg-gray-400"></div>
           </div>
-          <ul class="rights flex space-x-1">
+          <ul class="privacy_&_site flex space-x-3">
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Site Terms</a></li>
           </ul>
         </div>
-        <div class="rights"></div>
+        <div class="rights">@ 2021 Rent By Owner. all rights Reserved</div>
       </div>
     </footer>
   </body>
