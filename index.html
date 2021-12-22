@@ -5,18 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>HTML + CSS</title>
   </head>
   <body>
     <nav
       class="bg-blue-900 text-white flex justify-between items-center px-4 py-6"
     >
       <div class="logo">Logo</div>
-      <div class="others hidden sm:block">
-        <a href="">Link</a>
-        <a href="">Link</a>
-        <a href="">Link</a>
-        <a href="">Link</a>
+      <div class="others hidden sm:block flex space-x-3 ">
+        <a href="" class="tracking-wider font-regular text-lg">Rentals
+          <i class="fas fa-chevron-down"></i>
+        </a>
+        <a href="" class="tracking-wider font-regular text-lg">Nearby
+          <i class="fas fa-chevron-down"></i></a>
+        <a href="" class="tracking-wider font-regular text-lg">Destinations
+          <i class="fas fa-chevron-down"></i></a>
+        <button class="bg-[#00CD92] py-3 p-4 rounded-xl font-regular text-white text-lg">Find a Vacation Rental</button>
       </div>
       <svg
         class="block h-6 w-6 sm:hidden"
@@ -37,9 +42,12 @@
     </nav>
     <main class="max-w-7xl bg-gray-100 mx-auto">
       <div class="hero h-96 bg-[url('/img/hero.jpg')] bg-cover bg-center mt-2">
-        <h3>JOURNEYS</h3>
-        <h1>Stories From Around the world</h1>
-        <input type="text" placeholder="Search ..." />
+        <div class="place-items-center">
+          <h3>JOURNEYS</h3>
+          <h1>Stories From Around the world</h1>
+          <input type="text" placeholder="Search ..." />
+        </div>
+
       </div>
       <div class="mt-4 sm:flex sm:space-x-5">
         <div
@@ -68,19 +76,90 @@
       </div>
       <div class="mt-4 sm:flex sm:space-x-4">
         <div class="mb-4 sm:mb-0 sm:w-9/12 sm:flex sm:flex-col">
-          <div class="h-80 bg-gray-300 mb-4 sm:mb-0">
-            the best Beach in town
+          <div class="sm:flex sm:space-x-4 mb-4 space-x-1">
+            <div class="image w-4/12 h-80 bg-blue-900"></div>
+            <div class="image-content w-8/12 h-80 bg-gray-300">
+              the best Beach in town
+            </div>
           </div>
-          <div class="h-80 bg-gray-300 mb-4 sm:mb-0">
-            the best Sarasota Area
+          <div class="sm:flex sm:space-x-4 mb-4 space-x-1">
+            <div class="image w-4/12 h-80 bg-blue-900"></div>
+            <div class="image-content w-8/12 h-80 bg-gray-300">
+              the best Sarosta Artea
+            </div>
           </div>
         </div>
-        <div class="mb-4 sm:mb-0 sm:w-3/12 h-80 bg-gray-300">Categories</div>
+        <div class="mb-4 sm:mb-0 sm:w-3/12 h-80 bg-gray-300">
+          <header class="font-light uppercase">catagories</header>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
       </div>
-      <div class="hero h-80 bg-gray-300 mt-4">Follow the adventures</div>
+      <div class="hero bg-gray-200 mt-4">
+        <header class="font-light uppercase">Follow the adventures</header>
+        <div class="grid grid-cols-4">
+          <div
+            class="
+              mb-4
+              h-80
+              bg-gray-300 bg-[url('/img/tybee.jpg')] bg-cover bg-center
+            "
+          >
+            tybee Island
+          </div>
+          <div
+            class="
+              mb-4
+              h-80
+              bg-gray-300 bg-[url('/img/tybee.jpg')] bg-cover bg-center
+            "
+          >
+            tybee Island
+          </div>
+          <div
+            class="
+              mb-4
+              h-80
+              bg-gray-300 bg-[url('/img/tybee.jpg')] bg-cover bg-center
+            "
+          >
+            tybee Island
+          </div>
+          <div
+            class="
+              mb-4
+              h-80
+              bg-gray-300 bg-[url('/img/tybee.jpg')] bg-cover bg-center
+            "
+          >
+            tybee Island
+          </div>
+        </div>
+      </div>
     </main>
-    <footer class="bg-gray-300 text-white flex justify-between px-4 py-6 mt-4">
-      Footer
+    <footer class="bg-blue-100 px-4 py-6 mt-4">
+      <div class="content border bg-gray-300 w-7/12 mx-auto mb-2">
+        <header class="font-semibold text-2xl">Find a Place to Stay</header>
+      </div>
+      <hr />
+      <div>
+        <div class="policy flex justify-between py-2 items-center">
+          <div class="icons flex space-x-1">
+            <div class="h-8 w-8 rounded-full bg-gray-400"></div>
+            <div class="h-8 w-8 rounded-full bg-gray-400"></div>
+            <div class="h-8 w-8 rounded-full bg-gray-400"></div>
+          </div>
+          <ul class="rights flex space-x-1">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Site Terms</a></li>
+          </ul>
+        </div>
+        <div class="rights"></div>
+      </div>
     </footer>
   </body>
 </html>
