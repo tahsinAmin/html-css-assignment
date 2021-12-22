@@ -1,32 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="https://cdn.tailwindcss.com"></script>
-   <title>Document</title>
-</head>
-<body>
-   <nav class="bg-blue-900 text-white flex justify-between px-4 py-6">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav
+      class="bg-blue-900 text-white flex justify-between items-center px-4 py-6"
+    >
       <div class="logo">Logo</div>
-      <div class="others">Others</div>
-   </nav>
-   <main class="container bg-gray-100 mx-auto">
-      <div class="hero h-96 bg-gray-300 mt-2"></div>
-      <div class="hero mt-4 flex space-x-5">
-         <div class="left w-3/12 h-80 bg-gray-300"></div>
-         <div class="left w-6/12 h-80 bg-gray-300"></div>
-         <div class="right w-3/12 h-80 bg-gray-300"></div>
+      <div class="others hidden sm:block">
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
       </div>
-      <div class="hero mt-4 flex space-x-4">
-         <div class="left w-9/12 h-80 bg-gray-300"></div>
-         <div class="right w-3/12 h-80 bg-gray-300"></div>
+      <svg
+        class="block h-6 w-6 sm:hidden"
+        xmlns="https:www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M4
+        6h16M4 12h16M4 18h16"
+        />
+      </svg>
+    </nav>
+    <main class="max-w-7xl bg-gray-100 mx-auto">
+      <div class="hero h-96 bg-[url('/img/hero.jpg')] bg-cover bg-center mt-2">
+        <h3>JOURNEYS</h3>
+        <h1>Stories From Around the world</h1>
+        <input type="text" placeholder="Search ..." />
       </div>
-      <div class="hero h-80 bg-gray-300 mt-4">Follow the adventures  </div>
-   </main>
-   <footer  class="bg-gray-300 text-white flex justify-between px-4 py-6 mt-4">
+      <div class="mt-4 sm:flex sm:space-x-5">
+        <div
+          class="
+            mb-4
+            sm:mb-0 sm:w-3/12
+            h-80
+            bg-gray-300 bg-[url('/img/sedona.jpg')] bg-cover bg-center
+          "
+        >
+          The Best Sedona
+        </div>
+        <div
+          class="
+            mb-4
+            sm:mb-0 sm:w-6/12
+            h-80
+            bg-gray-300 bg-[url('/img/tybee.jpg')] bg-cover bg-center
+          "
+        >
+          tybee Island
+        </div>
+        <div class="mb-4 sm:mb-0 sm:w-3/12 h-80 bg-blue-900 text-[#00CD92]">
+          The night life and the food
+        </div>
+      </div>
+      <div class="mt-4 sm:flex sm:space-x-4">
+        <div class="mb-4 sm:mb-0 sm:w-9/12 sm:flex sm:flex-col">
+          <div class="h-80 bg-gray-300 mb-4 sm:mb-0">
+            the best Beach in town
+          </div>
+          <div class="h-80 bg-gray-300 mb-4 sm:mb-0">
+            the best Sarasota Area
+          </div>
+        </div>
+        <div class="mb-4 sm:mb-0 sm:w-3/12 h-80 bg-gray-300">Categories</div>
+      </div>
+      <div class="hero h-80 bg-gray-300 mt-4">Follow the adventures</div>
+    </main>
+    <footer class="bg-gray-300 text-white flex justify-between px-4 py-6 mt-4">
       Footer
-   </footer>
-</body>
+    </footer>
+  </body>
 </html>
