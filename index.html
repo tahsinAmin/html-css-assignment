@@ -81,15 +81,24 @@
       >
         <div class="absolute top-1/2 w-full">
           <div class="text-center text-white bg-gray-900">
-            <h3 class="text-2xl font-normal">JOURNEYS</h3>
-            <h1 class="text-4xl font-semibold">
-              Stories From Around the world
+            <h3 class="text-2xl font-normal mb-4">JOURNEYS</h3>
+            <h1 class="text-5xl font-medium mb-4">
+              Stories From Around The World
             </h1>
-            <input type="text" placeholder="Search ..." />
+            <div class="search flex justify-center">
+              <div class="flex items-center bg-white rounded-md">
+                <i class="fas fa-search pl-2 text-gray-400 bg-white"></i>
+                <input
+                  type="text"
+                  placeholder="Search ..."
+                  class="px-1 py-2 rounded-md"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="mt-4 h-72 sm:flex sm:space-x-5">
+      <div class="mt-4  sm:flex sm:space-x-6 px-4 sm:px-0">
         <div
           class="
             mb-4
@@ -97,14 +106,14 @@
             flex flex-col
             justify-between
             text-white
-            font-normal
-            shadow-lg
+            font-medium
             bg-[url('/img/sedona.jpg')] bg-cover bg-center
             p-4
+            h-60 sm:h-72
             rounded-lg
           "
         >
-          <p class="text-2xl" style="text-shadow: 1px 1px #000">
+          <p class="text-3xl" style="text-shadow: 1px 1px #000">
             The Best Sedona Hiking Trails
           </p>
           <small class="text-md">By Staff Writer</small>
@@ -112,13 +121,21 @@
         <div
           class="
             mb-4
-            p-4
             sm:mb-0 sm:w-6/12
+            flex flex-col
+            justify-between
+            text-white
+            font-medium
             bg-gray-300 bg-[url('/img/tybee.jpg')] bg-cover bg-center
+            p-4
+            h-60 sm:h-72
             rounded-lg
           "
         >
-          tybee Island
+          <p class="text-3xl" style="text-shadow: 1px 1px #000">
+            Tybee Island Fun Things To Do While On Vacation
+          </p>
+          <small class="text-md">By Staff Writer</small>
         </div>
         <div
           class="
@@ -129,13 +146,15 @@
             p-4
             flex flex-col
             justify-between
+            font-medium
+            h-44 sm:h-72
           "
         >
-          <p class="text-[#00CD92] text-2xl font-semibold">
-            The night life and the food
+          <p class="text-[#00CD92] text-3xl font-semibold">
+            The night life and the food.
           </p>
-          <small class="text-md font-semibold text-[#00CD92] underline"
-            >Explore Lioberia</small
+          <small class="text-md font-black text-[#00CD92] underline"
+            >Explore Liberia</small
           >
         </div>
       </div>
@@ -144,7 +163,8 @@
           <div class="sm:flex sm:space-x-4 mb-4 space-x-1">
             <div
               class="
-                w-11/12 mx-auto
+                w-10/12
+                mx-auto
                 sm:w-4/12
                 h-64
                 flex
@@ -163,10 +183,19 @@
                 height="26"
               />
             </div>
-            <div class="image-content w-8/12 h-80">
+            <div class="image-content w-8/12 h-80 flex flex-col space-y-6">
               <header class="text-5xl font-regular text-blue-900 bg-gray-300">
                 The Best Beach Towns in florida You Need To Visit
               </header>
+              <p class="text-gray-500">
+                Written by
+                <span class="underline text-blue-900">staff writer</span>
+              </p>
+              <p class="text-gray-500">
+                Let's start with the big picture.Planning a trip top flotrrida?>
+                Here are the best branches wherer you shoulkd spn\end the week
+                (or the month) on the beach with your...
+              </p>
             </div>
           </div>
           <div class="sm:flex sm:space-x-4 mb-4 space-x-1">
@@ -175,31 +204,38 @@
               the best Sarosta Artea
             </div>
           </div>
-          <div class="pagination flex space-x-3">
-            <div class="active border bg-blue-900 text-white py-2 px-4">1</div>
-            <div class="border text-blue-900 py-2 px-4">2</div>
-            <div class="border text-blue-900 py-2 px-4">...</div>
-            <div class="border text-blue-900 py-2 px-4">38</div>
-            <div class="border text-blue-900 p-2">LAST</div>
+          <div class="pagination flex space-x-3 font-medium text-sm">
+            <div class="active border bg-blue-900 text-white px-3 py-1">1</div>
+            <div class="border text-blue-900 px-3 py-1">2</div>
+            <div class="border text-blue-900 px-3 py-1">...</div>
+            <div class="border text-blue-900 px-3 py-1">38</div>
+            <div class="border text-blue-900 px-2 py-1">LAST</div>
           </div>
           <div class="typeeIs py-4 px-8 bg-blue-900 flex">
-            <i class="fas fa-quote-left text-gray-400 h-10 w-10 scale-105"></i>
-            <header class="text-[#00CD92] text-5xl font-regular">
-              Tybee is replete with everythiong that you need to have the
-              perfect vacation.
-            </header>
+            <div class="flex">
+              <i
+                class="fas fa-quote-left text-blue-400 h-10 w-10 scale-105"
+              ></i>
+              <header class="text-[#00CD92] text-4xl font-medium">
+                Tybee is replete with everythiong that you need to have the
+                perfect vacation.
+              </header>
+            </div>
+            <div class="flex flex-col justify-end">
+              <i class="fas fa-arrow-right"></i>
+            </div>
           </div>
         </div>
-        <div class="mb-4 sm:mb-0 sm:w-3/12 h-80 bg-gray-300">
+        <div class="mb-4 sm:mb-0 sm:w-3/12 h-80 flex flex-col space-y-2">
           <header class="font-light uppercase">catagories</header>
-          <ul>
+          <ul class="flex flex-col space-y-2">
             <li class="text-[#00CD92] flex justify-between">
               <p>Alabama</p>
               <span
                 class="
-                  h-4
-                  w-4
-                  border border-[#00CD92]
+                  h-5
+                  w-5
+                  border border-[#00CD92] border-2
                   rounded-full
                   flex
                   items-center
@@ -213,9 +249,329 @@
               <p>Alabama</p>
               <span
                 class="
-                  h-6
-                  w-6
-                  border border-[#00CD92]
+                  h-5
+                  w-5
+                  border border-[#00CD92] border-2
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </li>
+            <li class="text-[#00CD92] flex justify-between">
+              <p>Alabama</p>
+              <span
+                class="
+                  h-5
+                  w-5
+                  border border-[#00CD92] border-2
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </li>
+            <li class="text-[#00CD92] flex justify-between">
+              <p>Alabama</p>
+              <span
+                class="
+                  h-5
+                  w-5
+                  border border-[#00CD92] border-2
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </li>
+            <li class="text-[#00CD92] flex justify-between">
+              <p>Alabama</p>
+              <span
+                class="
+                  h-5
+                  w-5
+                  border border-[#00CD92] border-2
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </li>
+            <li class="text-[#00CD92] flex justify-between">
+              <p>Alabama</p>
+              <span
+                class="
+                  h-5
+                  w-5
+                  border border-[#00CD92] border-2
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </li>
+            <li class="text-[#00CD92] flex justify-between">
+              <p>Alabama</p>
+              <span
+                class="
+                  h-5
+                  w-5
+                  border border-[#00CD92] border-2
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </li>
+            <li class="text-[#00CD92] flex justify-between">
+              <p>Alabama</p>
+              <span
+                class="
+                  h-5
+                  w-5
+                  border border-[#00CD92] border-2
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </li>
+            <li class="text-[#00CD92] flex justify-between">
+              <p>Alabama</p>
+              <span
+                class="
+                  h-5
+                  w-5
+                  border border-[#00CD92] border-2
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </li>
+            <li class="text-[#00CD92] flex justify-between">
+              <p>Alabama</p>
+              <span
+                class="
+                  h-5
+                  w-5
+                  border border-[#00CD92] border-2
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </li>
+            <li class="text-[#00CD92] flex justify-between">
+              <p>Alabama</p>
+              <span
+                class="
+                  h-5
+                  w-5
+                  border border-[#00CD92] border-2
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </li>
+            <li class="text-[#00CD92] flex justify-between">
+              <p>Alabama</p>
+              <span
+                class="
+                  h-5
+                  w-5
+                  border border-[#00CD92] border-2
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </li>
+            <li class="text-[#00CD92] flex justify-between">
+              <p>Alabama</p>
+              <span
+                class="
+                  h-5
+                  w-5
+                  border border-[#00CD92] border-2
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </li>
+            <li class="text-[#00CD92] flex justify-between">
+              <p>Alabama</p>
+              <span
+                class="
+                  h-5
+                  w-5
+                  border border-[#00CD92] border-2
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </li>
+            <li class="text-[#00CD92] flex justify-between">
+              <p>Alabama</p>
+              <span
+                class="
+                  h-5
+                  w-5
+                  border border-[#00CD92] border-2
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </li>
+            <li class="text-[#00CD92] flex justify-between">
+              <p>Alabama</p>
+              <span
+                class="
+                  h-5
+                  w-5
+                  border border-[#00CD92] border-2
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </li>
+            <li class="text-[#00CD92] flex justify-between">
+              <p>Alabama</p>
+              <span
+                class="
+                  h-5
+                  w-5
+                  border border-[#00CD92] border-2
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </li>
+            <li class="text-[#00CD92] flex justify-between">
+              <p>Alabama</p>
+              <span
+                class="
+                  h-5
+                  w-5
+                  border border-[#00CD92] border-2
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </li>
+            <li class="text-[#00CD92] flex justify-between">
+              <p>Alabama</p>
+              <span
+                class="
+                  h-5
+                  w-5
+                  border border-[#00CD92] border-2
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </li>
+            <li class="text-[#00CD92] flex justify-between">
+              <p>Alabama</p>
+              <span
+                class="
+                  h-5
+                  w-5
+                  border border-[#00CD92] border-2
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </li>
+            <li class="text-[#00CD92] flex justify-between">
+              <p>Alabama</p>
+              <span
+                class="
+                  h-5
+                  w-5
+                  border border-[#00CD92] border-2
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </li>
+            <li class="text-[#00CD92] flex justify-between">
+              <p>Alabama</p>
+              <span
+                class="
+                  h-5
+                  w-5
+                  border border-[#00CD92] border-2
                   rounded-full
                   flex
                   items-center
@@ -229,7 +585,9 @@
         </div>
       </div>
       <div class="mt-12">
-        <header class="font-medium text-xl text-gray-800">Follow The Adventures</header>
+        <header class="font-medium text-2xl text-gray-800">
+          Follow The Adventures
+        </header>
         <div class="mt-4 grid grid-cols-4">
           <div
             class="
@@ -237,52 +595,53 @@
               h-80
               bg-gray-300 bg-[url('/img/india2.jpg')] bg-cover bg-center
             "
-          >
-          </div>
+          ></div>
           <div
             class="
               mb-4
               h-80
               bg-gray-300 bg-[url('/img/lioncity.jpg')] bg-cover bg-center
             "
-          >
-          </div>
+          ></div>
           <div
             class="
               mb-4
               h-80
               bg-gray-300 bg-[url('/img/indiagate.jpg')] bg-cover bg-center
             "
-          >
-          </div>
+          ></div>
           <div
             class="
               mb-4
               h-80
               bg-gray-300 bg-[url('/img/china1.jpg')] bg-cover bg-left
             "
-          >
-          </div>
+          ></div>
+        </div>
+        <div class="follow_us text-[#00CD92] text-lg text-right font-medium">
+          FOLLOW US ON INSTAGRAM
         </div>
       </div>
     </main>
-    <footer class="bg-blue-100 px-4 py-6 mt-4">
-      <div class="content border flex space-x-4 bg-gray-300 w-7/12 mx-auto mb-2">
+    <footer class="bg-indigo-100 px-4 pt-6 mt-4">
+      <div
+        class="content border flex space-x-96 bg-gray-300 w-7/12 mx-auto mb-2"
+      >
         <div class="find">
           <header class="font-semibold text-xl">Find a Place to Stay</header>
           <ul class="grid grid-cols-2">
+            <li>All RBO Homes</li>
+            <li>Vacation rentals</li>
             <li>Cabins</li>
-            <li>Cabins</li>
-            <li>Cabins</li>
-            <li>Cabins</li>
-            <li>Cabins</li>
-            <li>Cabins</li>
-            <li>Cabins</li>
-            <li>Cabins</li>
-            <li>Cabins</li>
-            <li>Cabins</li>
-            <li>Cabins</li>
-            <li>Cabins</li>
+            <li>Condos</li>
+            <li>Cottages</li>
+            <li>Ski Chalets</li>
+            <li>Timeshares</li>
+            <li>RV Rentals</li>
+            <li>Boat Rentals</li>
+            <li>Villas</li>
+            <li>Hotels</li>
+            <li>Resorts</li>
           </ul>
         </div>
         <div class="grid grid-cols-2">
@@ -290,33 +649,68 @@
             <header class="font-semibold text-xl">About Us</header>
             <ul class="grid grid-cols-1">
               <li>About rent By Owner</li>
-              <li>Our Travel Journal</li>  
+              <li>Our Travel Journal</li>
             </ul>
           </div>
           <div class="explore">
             <header class="font-semibold text-xl">Explore</header>
             <ul class="grid grid-cols-1">
               <li>My Profile</li>
-              <li>Site Map</li>  
+              <li>Site Map</li>
             </ul>
           </div>
           <div class="support">
             <header class="font-semibold text-xl">Support</header>
             <ul class="grid grid-cols-1">
               <li>FAQs</li>
-              <li>List your Property</li>  
+              <li>List your Property</li>
             </ul>
           </div>
         </div>
-
       </div>
       <div class="border border-t-1 border-gray-600"></div>
-      <div class="flex justify-between py-2 items-center text-lg text-gray-600">
+      <div class="flex justify-between pt-2 items-center text-lg text-gray-800">
         <div class="policy flex justify-between py-2 items-center space-x-64">
           <div class="icons flex space-x-1">
-            <div class="h-8 w-8 rounded-full bg-gray-400"></div>
-            <div class="h-8 w-8 rounded-full bg-gray-400"></div>
-            <div class="h-8 w-8 rounded-full bg-gray-400"></div>
+            <div
+              class="
+                h-8
+                w-8
+                rounded-full
+                bg-blue-900
+                flex
+                justify-center
+                items-center
+              "
+            >
+              <i class="fab fa-facebook-square text-white"></i>
+            </div>
+            <div
+              class="
+                h-8
+                w-8
+                rounded-full
+                bg-blue-900
+                flex
+                justify-center
+                items-center
+              "
+            >
+              <i class="fab fa-instagram text-white"></i>
+            </div>
+            <div
+              class="
+                h-8
+                w-8
+                rounded-full
+                bg-blue-900
+                flex
+                justify-center
+                items-center
+              "
+            >
+              <i class="fab fa-twitter text-white"></i>
+            </div>
           </div>
           <ul class="privacy_&_site flex space-x-3">
             <li><a href="#">Privacy Policy</a></li>
