@@ -622,14 +622,15 @@
       <div
         class="
           grid grid-cols-1
-          sm:grid-cols-4
-          sm:gap-x-56
+          sm:grid-cols-4 sm:gap-x-56
           gap-y-9
           sm:w-8/12 sm:mx-auto
           mb-2
         "
       >
-        <div class=" find
+        <div
+          class="
+            find
             col-span-2
             text-center
             sm:text-left
@@ -751,23 +752,21 @@
         class="
           sm:flex sm:justify-between
           pt-2
-          items-center
+          sm:items-center
           text-lg text-gray-800
         "
       >
-        <div
-          class="
-            policy
-            block
-            w-auto
-            mx-auto
-            sm:flex sm:justify-between
-            py-2
-            items-center
-            sm:space-x-64
-          "
-        >
-          <div class="icons flex space-x-1 my-10 sm:my-0 justify-center">
+        <div class="flex flex-col sm:flex-row sm:space-x-64">
+          <div
+            class="
+              icons
+              flex
+              space-x-1
+              my-10
+              sm:my-0 sm:justify-left
+              justify-center
+            "
+          >
             <div
               class="
                 h-8
@@ -810,7 +809,7 @@
           </div>
           <ul
             class="
-              privacy_&_site
+              privacy_n_site
               text-center
               flex
               text-xl
