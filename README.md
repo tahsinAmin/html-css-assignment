@@ -1,5 +1,8 @@
 # Static HTML page for HTML-CSS Assignment
 
+## About Us
+- Find the Best Prices on Vacation Rentals, RBO Homes, Cottages, Cabins, Condos & More. Book and Stay in the World's Top Destinations with Rent By Owner™
+
 ## Tools Used
 - HTML5
 - TailwindCSS[https://tailwindcss.com/]
