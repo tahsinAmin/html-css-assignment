@@ -121,8 +121,8 @@
         </div>
         <div
           class="
-          my-8
-          sm:my-0 sm:w-6/12
+            my-8
+            sm:my-0 sm:w-6/12
             flex flex-col
             justify-between
             text-white
@@ -171,7 +171,8 @@
                 w-10/12
                 mx-auto
                 sm:w-4/12
-                h-56 sm:h-64
+                h-56
+                sm:h-64
                 flex
                 items-center
                 justify-center
@@ -191,7 +192,15 @@
             <div
               class="content w-10/12 sm:w-8/12 mx-auto flex flex-col space-y-6"
             >
-              <header class="text-2xl mt-4 sm:mt-0 sm:text-5xl font-regular text-blue-900">
+              <header
+                class="
+                  text-2xl
+                  mt-4
+                  sm:mt-0 sm:text-5xl
+                  font-regular
+                  text-blue-900
+                "
+              >
                 The Best Beach Towns in Florida you Need to visit
               </header>
               <p class="text-gray-500">
@@ -212,19 +221,27 @@
                 w-10/12
                 mx-auto
                 sm:w-4/12
-                h-56 sm:h-64
+                h-56
+                sm:h-64
                 flex
                 items-center
                 justify-center
                 rounded-xl
                 bg-[url('/img/sarasota.jpg')] bg-cover bg-center
               "
-            >
-            </div>
+            ></div>
             <div
               class="content w-10/12 sm:w-8/12 mx-auto flex flex-col space-y-6"
             >
-              <header class="text-2xl mt-4 sm:mt-0 sm:text-5xl font-regular text-blue-900">
+              <header
+                class="
+                  text-2xl
+                  mt-4
+                  sm:mt-0 sm:text-5xl
+                  font-regular
+                  text-blue-900
+                "
+              >
                 The Best Sarasota Area Beaches To Explore
               </header>
               <p class="text-gray-500">
@@ -232,7 +249,9 @@
                 <span class="underline text-blue-900">staff writer</span>
               </p>
               <p class="text-gray-500 hidden sm:block">
-                Sarasota County has some of the best beaches in all florida and the gulf of Mexico. So, whther you're looking for a more chilled-out white  sand beach to do...
+                Sarasota County has some of the best beaches in all florida and
+                the gulf of Mexico. So, whther you're looking for a more
+                chilled-out white sand beach to do...
               </p>
             </div>
           </div>
@@ -600,10 +619,17 @@
       </div>
     </main>
     <footer class="bg-indigo-100 px-4 pt-24 mt-4">
-      <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 gap-y-7 sm:w-7/12 mx-auto mb-2 gap-auto">
-        <div
-          class="
-            find
+      <div
+        class="
+          grid grid-cols-1
+          sm:grid-cols-4
+          sm:gap-x-56
+          gap-y-9
+          sm:w-8/12 sm:mx-auto
+          mb-2
+        "
+      >
+        <div class=" find
             col-span-2
             text-center
             sm:text-left
@@ -639,59 +665,85 @@
         </div>
         <div
           class="
-            about
-            text-center
-            sm:text-left
-            flex flex-col
-            sm:block
-            space-y-3
+            other_footer_items
+            col-span-2
+            grid grid-cols-1
+            sm:grid-cols-2 sm:gap-x-24
+            gap-y-9
           "
         >
-          <header class="ont-medium text-2xl">About Us</header>
-          <ul
+          <div
             class="
-              text-gray-600
-              font-regular
-              grid grid-cols-1
-              text-xl
-              gap-x-56 gap-y-3
+              about
+              text-center
+              sm:text-left
+              flex flex-col
+              sm:block
+              space-y-3
             "
           >
-            <li>About rent By Owner</li>
-            <li>Our Travel Journal</li>
-          </ul>
-        </div>
-        <div
-          class="
-            explore
-            text-center
-            sm:text-left
-            flex flex-col
-            sm:block
-            space-y-3
-          "
-        >
-          <header class="font-semibold text-xl">Explore</header>
-          <ul class="grid grid-cols-1">
-            <li>My Profile</li>
-            <li>Site Map</li>
-          </ul>
-        </div>
-        <div
-          class="
-            support
-            text-center
-            sm:text-left
-            flex flex-col
-            sm:block
-            space-y-3
-          "
-        >
-          <header class="font-semibold text-xl">Support</header>
-          <ul class="grid grid-cols-1">
-            <li>FAQs</li>
-            <li>List your Property</li>
-          </ul>
+            <header class="font-medium text-2xl">About Us</header>
+            <ul
+              class="
+                text-gray-600
+                font-regular
+                grid grid-cols-1
+                text-xl
+                gap-y-3
+              "
+            >
+              <li>About rent By Owner</li>
+              <li>Our Travel Journal</li>
+            </ul>
+          </div>
+          <div
+            class="
+              explore
+              text-center
+              sm:text-left
+              flex flex-col
+              sm:block
+              space-y-3
+            "
+          >
+            <header class="font-medium text-2xl">Explore</header>
+            <ul
+              class="
+                text-gray-600
+                font-regular
+                grid grid-cols-1
+                text-xl
+                gap-y-3
+              "
+            >
+              <li>My Profile</li>
+              <li>Site Map</li>
+            </ul>
+          </div>
+          <div
+            class="
+              support
+              text-center
+              sm:text-left
+              flex flex-col
+              sm:block
+              space-y-3
+            "
+          >
+            <header class="font-medium text-2xl">Support</header>
+            <ul
+              class="
+                text-gray-600
+                font-regular
+                grid grid-cols-1
+                text-xl
+                gap-y-3
+              "
+            >
+              <li>FAQs</li>
+              <li>List your Property</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="hidden sm:block border-b border-gray-300 w-full"></div>
